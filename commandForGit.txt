@@ -1,0 +1,19 @@
+touch .gitignore   // created a gitignoe file we have to include ignore file
+
+git config --global user.name Meet
+git config --global user.email "mit737028@gmail.com"
+
+git init           // initialize the git repo
+git add .          //all files are in staging areaexclude gitignore
+git commit -m "Initital Commit"
+git status   //just for see the status of working tree
+
+ssh-keygen -t rasa -b 4096 -C "mit737028@gmail.com"
+tail <path to id_rsa.pub>   //add this key to github account
+//use ssh key for authentication
+
+git remote add origin <ssh url.git>
+git push origin master //pushed project on github
+
+
+ 
